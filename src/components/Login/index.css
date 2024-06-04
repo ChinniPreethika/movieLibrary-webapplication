@@ -1,0 +1,110 @@
+/* Overall form container */
+.overall-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141414; /* Dark background color */
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)); /* Gradient for a smooth look */
+}
+
+/* Form container */
+.form-container {
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Heading container */
+.heading-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Heading styles */
+.heading-container h1 {
+  color: #e50914; /* Netflix red */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+}
+
+/* Input container */
+.input-container {
+  margin-bottom: 20px;
+}
+
+/* Label styles */
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #b3b3b3; /* Light grey */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Input styles */
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333; /* Dark input background */
+  color: #fff; /* White text */
+  font-size: 16px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.75);
+}
+
+.input::placeholder {
+  color: #999; /* Placeholder color */
+}
+
+/* Button container */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Login button styles */
+.login-button {
+  background-color: #e50914; /* Netflix red */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #f40612; /* Slightly lighter red on hover */
+}
+
+/* New user container */
+.new-user-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* New user text styles */
+.new-user {
+  color: #b3b3b3; /* Light grey */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* New user link styles */
+.new-user-link {
+  color: #e50914; /* Netflix red */
+  text-decoration: none;
+}
+
+.new-user-link:hover {
+  text-decoration: underline;
+}

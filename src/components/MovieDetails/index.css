@@ -1,0 +1,115 @@
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #141414; /* Netflix dark background */
+  color: #ffffff; /* White text */
+  margin: 0;
+  padding: 0;
+}
+
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141414;
+}
+
+
+.error-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141414;
+}
+
+
+.moviedetails-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.movie-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #e50914; 
+  margin-bottom: 20px;
+}
+
+
+.movie-poster {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.movies-details-container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.movies-details-container .content {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.movies-details-container .content .span {
+  font-weight: bold;
+  color: #e50914; 
+}
+
+
+.two-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+.btn {
+  background-color: #e50914;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f40612; 
+}
+
+
+.back-button {
+  background-color: #333; 
+}
+
+.back-button:hover {
+  background-color: #555; 
+}
+
+
+.movies-sidebar-container {
+  display: flex;
+  margin-top: 80px;
+}
+
+
+.movie-details-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #141414; 
+}

@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from 'react'
+import { Switch, Route } from 'react-router-dom'
+import SignUp from './components/SignUp'
+import Login from './components/Login'
+import MovieDetails from './components/MovieDetails'
+import Home from './components/Home'
+import { ToastContainer } from "react-toastify";
+import Playlist from './components/Playlist'
+import { PlaylistProvider } from './contexts/PlaylistContext';
+import "react-toastify/dist/ReactToastify.css";
+import { auth } from './components/firebase'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  state = { user: '' }
+
+  componentDidMount() {
+    auth.onAuthStateChanged(user => {
+      this.setState({ user: user })
+    })
+  }
+
+  render() {
+    const { user } = this.state
+    return (
+      <PlaylistProvider> {/* Wrap your component hierarchy with PlaylistProvider */}
+        <>
+          <Switch>
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/signup" component={SignUp} />
+            <Route exact path="/" component={user ? Home : Login} />
+            <Route path="/movies/:id" component={MovieDetails} />
+            <Route path="/playlist" component={Playlist} />
+          </Switch>
+          <ToastContainer />
+        </>
+      </PlaylistProvider>
+    )
+  }
+
 }
+
+
 
 export default App;

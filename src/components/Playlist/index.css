@@ -1,0 +1,100 @@
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #141414; 
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+
+.playlist-sidebar-container {
+  display: flex;
+  height: 100vh;
+}
+
+.playlist-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.your-playlist-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e50914; 
+  margin-bottom: 20px;
+}
+
+.no-movies-text {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.add-movies-link {
+  color: #e50914; 
+  text-decoration: none;
+}
+
+.add-movies-link:hover {
+  text-decoration: underline;
+}
+
+.playlist-list-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.playlist-movie-details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.playlist-poster {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.movie-title {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.remove-button {
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #f40612; 
+}
